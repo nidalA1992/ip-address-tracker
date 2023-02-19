@@ -55,6 +55,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 <!-- - Flexbox
 - CSS Grid -->
 - Mobile-first workflow
+- [Feature-Sliced Design](https://feature-sliced.design/) - Architectural methodology for frontend projects
 - [TypeScript](https://www.typescriptlang.org/) - Strongly typed JavaScript extension
 - [React](https://reactjs.org/) - JS library
 - [Leaflet](https://leafletjs.com/) - JavaScript library for interactive maps
