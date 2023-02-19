@@ -1,0 +1,15 @@
+@use 'app/styles/mixins.scss';
+
+.header {
+  @include mixins.container;
+  // @include mixins.flex(center, center, column);
+  background-image: url('../../../../public/pattern-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.title {
+  @include mixins.font(24px, 500, white);
+  text-align: center;
+}
