@@ -30,3 +30,4 @@ yarn-error.log*
 *.fig
 
 _README.md
+.env
