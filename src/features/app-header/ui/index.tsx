@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import s from "./styles.module.scss";
-import { Display } from "./display";
+import { Display } from "../../display";
 import { SearchForm } from "features/search-form";
 
 export const AppHeader = () => {
