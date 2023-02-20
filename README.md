@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/nidalA1992/ip-address-tracker
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://nidala1992.github.io/ip-address-tracker
 
 ## My process
 
