@@ -2,7 +2,6 @@
 
 .header {
   @include mixins.container;
-  background-image: url('../../../../public/pattern-bg.png');
   grid-template-rows: 35% 25% 1fr;
   
   background-repeat: no-repeat;
