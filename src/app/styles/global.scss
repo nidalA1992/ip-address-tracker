@@ -72,3 +72,14 @@ select {
     scroll-behavior: auto !important;  
 	}  
 }
+
+input {
+  outline: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}

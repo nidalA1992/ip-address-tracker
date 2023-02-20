@@ -1,14 +1,10 @@
 @mixin container {
   display: grid;
-  grid-template-columns: 1fr min(calc(1366px - 80px), calc(100% - 40px)) 1fr;
+  grid-template-columns: 1fr min(768px, calc(100% - 40px)) 1fr;
   column-gap: 20px;
 
   & > * {
     grid-column: 2;
-  }
-
-  @media (min-width: 768px) {
-    column-gap: 40px;
   }
 }
 
@@ -21,7 +17,7 @@
   $justify: center, 
   $align: center, 
   $dir: row, 
-  $wrap: no-wrap
+  $wrap: nowrap
 ) {
   display: flex;
   justify-content: $justify;

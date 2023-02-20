@@ -8,5 +8,5 @@ import { AppHeader } from "features/app-header";
 import { AppMap } from "features/app-map";
 
 export const App = () => {
-  return <AppLayout header={<AppHeader />} map={<AppMap />} />;
+  return <AppLayout header={<AppHeader />} map={<AppMap lat={0} lng={0} />} />;
 };

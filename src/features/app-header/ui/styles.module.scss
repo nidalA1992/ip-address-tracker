@@ -1,0 +1,22 @@
+@use 'app/styles/mixins.scss';
+
+.header {
+  @include mixins.container;
+  grid-template-rows: 35% 25% 1fr;
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30vh;
+}
+
+.title {
+  @include mixins.font(24px, 500, white);
+  text-align: center;
+  &::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
