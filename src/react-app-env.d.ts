@@ -7,7 +7,6 @@ const IpGeolacationIpData = {
     region: "California",
     timezone: "-07:00",
     city: "",
-    timezone: "",
     lat: "",
     lng: "",
     postalCode: "",

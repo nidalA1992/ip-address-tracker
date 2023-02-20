@@ -2,6 +2,7 @@
 
 .display {
   @include mixins.flex(null, null, column);
+  position: relative;
   padding: 20px 60px;
   margin-top: 20px;
   gap: 20px;
@@ -12,6 +13,7 @@
   grid-column: 2;
   height: fit-content;
   background-color: white;
+  z-index: 10;
 }
 
 .row {
