@@ -52,8 +52,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - JSX markup
 - SCSS modules
-<!-- - Flexbox
-- CSS Grid -->
+- Flexbox
+- CSS Grid
 - Mobile-first workflow
 - [Feature-Sliced Design](https://feature-sliced.design/) - Architectural methodology for frontend projects
 - [TypeScript](https://www.typescriptlang.org/) - Strongly typed JavaScript extension
@@ -61,8 +61,6 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - [Leaflet](https://leafletjs.com/) - JavaScript library for interactive maps
 - [React Leaflet](https://react-leaflet.js.org/) - React components for Leaflet maps
 - [IP Geolocation API](https://geo.ipify.org/) - Real-time IP Geolocation API
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
@@ -74,9 +72,14 @@ To see how you can add code snippets, see below:
 <h1>Some HTML code I'm proud of</h1>
 ```
 
+CSS trick for center text in some element
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+&::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 ```
 

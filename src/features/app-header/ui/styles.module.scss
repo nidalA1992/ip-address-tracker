@@ -2,14 +2,22 @@
 
 .header {
   @include mixins.container;
-  // @include mixins.flex(center, center, column);
   background-image: url('../../../../public/pattern-bg.png');
+  grid-template-rows: 35% 25% 1fr;
+  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 35vh;
 }
 
 .title {
   @include mixins.font(24px, 500, white);
   text-align: center;
+  &::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
 }

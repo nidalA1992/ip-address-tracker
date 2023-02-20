@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import type { ChangeEvent, EventHandler } from "react";
+import type {
+  ChangeEvent,
+  EventHandler,
+  Dispatch,
+  SetStateAction,
+} from "react";
 
 import { SearchIcon } from "../search-icon";
 import { fetchPosition } from "../../api/fetch-position";
@@ -9,7 +14,11 @@ import s from "./styles.module.scss";
 type InputChange = EventHandler<ChangeEvent<HTMLInputElement>>;
 type FormSubmit = EventHandler<ChangeEvent<HTMLFormElement>>;
 
-export const SearchForm = () => {
+interface ISearchForm {
+  setData: Dispatch<SetStateAction<IpGeolacationResponse>>;
+}
+
+export const SearchForm = (props: ISearchForm) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const [value, setValue] = useState("");
@@ -26,7 +35,8 @@ export const SearchForm = () => {
         return;
       }
 
-      const position = await fetchPosition();
+      const position = await fetchPosition(value);
+      props.setData(position);
       setValue("");
       console.log(position);
     } catch (err) {
@@ -53,6 +63,7 @@ export const SearchForm = () => {
       onSubmit={handleSubmit}
     >
       <input
+        placeholder="Search for any IP address"
         className={s.input}
         onChange={handleInputChange}
         value={value}
